@@ -1,0 +1,116 @@
+.root {
+  display:flex;
+  flex-direction: column;
+  color: #A2A7B9;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+}
+.header {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom:8px;
+  .headerItem {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-transform: capitalize;
+
+  }
+}
+.content{
+  display:flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  gap:10px;
+  .contentItemRow{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom:12px;
+    padding-bottom:9px;
+    border-bottom:1px solid gray;
+  }
+  .closeIcon{
+    width: 14px;
+    height: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #565861;
+    svg{
+      width:10px;
+      height:auto;
+    }
+  }
+}
+.addProfit{
+  cursor:pointer;
+  background:transparent;
+  outline: none;
+  border:none;
+  display:flex;
+  align-items: center;
+  color: #0078FF;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  p {
+    margin-left:10px;
+  }
+}
+.ml2{
+  display:inline-block;
+  margin-left:8px;
+}
+.addIcon{
+  width:24px;
+  height:24px;
+  color:#0078FF;
+}
+.profit{
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  span{
+    color:#fff;
+  }
+}
+
+.footer {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+ align-items: baseline;
+  color:#A2A7B9;
+  .dottedLine{
+    width:90px;
+    border-bottom:2px dashed #818C99;
+    opacity: 0.2;
+
+  }
+}
+
+.contentItemRow .numberInput {
+  display:flex;
+  align-items: baseline;
+  width:20%;
+  background-color: transparent;
+  div {
+    background-color:transparent;
+  }
+  input {
+    padding:5px;
+  }
+}
+.validationError {
+  color: #F96C5A;
+}
